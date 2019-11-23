@@ -2,6 +2,10 @@ body {
     margin: 0
 }
 
+canvas {
+    display: block;
+}
+
 #particles-js {
     position: absolute;
     width: 100%;
@@ -57,7 +61,8 @@ a.button1 {
     padding: 0.35em 1.2em;
     border: 2px solid #9988bb;
     margin: 0 0.3em 0.3em 0;
-    border-radius: 0.12em;
+    /* border-radius: 0.12em; */
+    border-radius: 4px;
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Source Sans Pro', sans-serif;
