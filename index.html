@@ -56,14 +56,45 @@
         }
 
         a {
-            color: #cfa9f5;
+            font-size: 0px;
         }
 
         img {
+            margin-top: 18px;
             margin-left: 8px;
             margin-right: 8px;
             height: 32px;
             width: 32px;
+        }
+
+        a.button1 {
+            display: inline-block;
+            padding: 0.35em 1.2em;
+            border: 0.1em solid #FFFFFF;
+            margin: 0 0.3em 0.3em 0;
+            border-radius: 0.12em;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 16px;
+            font-weight: 300;
+            color: #FFFFFF;
+            text-align: center;
+            transition: all 0.2s;
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+
+        a.button1:hover {
+            color: #000000;
+            background-color: #FFFFFF;
+        }
+
+        @media all and (max-width:30em) {
+            a.button1 {
+                display: block;
+                margin: 0.4em auto;
+            }
         }
     </style>
     <title>Asineth</title>
@@ -75,24 +106,31 @@
         <img class="pfp" src="/images/asineth.webp" height="25%" width="25%">
         <p id="title">Asineth</p>
         <h2>Full-stack developer, security researcher.</h2>
-        <a href="https://github.com/asineth">
-            <img src="/images/github.webp">
-        </a>
-        <a href="https://twitter.com/asineth0">
-            <img src="/images/twitter.webp">
-        </a>
-        <a href="https://reddit.com/u/asineth_">
-            <img src="/images/reddit.webp">
-        </a>
-        <a href="https://discord.gg/vYwpNz">
-            <img src="/images/discord.webp">
-        </a>
-        <a href="https://t.me/asineth0">
-            <img src="/images/telegram.webp">
-        </a>
-        <a href="mailto:me@asineth.gq">
-            <img src="/images/email.webp">
-        </a>
+        <div class="buttons">
+            <a href="javascript:alert('not implemented')" class="button1">Blog</a>
+            <a href="javascript:alert('not implemented')" class="button1">Projects</a>
+            <a href="http://keys.gnupg.net/pks/lookup?op=get&search=0x894DB8EC13634774" class="button1">PGP Key</a>
+        </div>
+        <div class="social">
+            <a href="https://github.com/asineth">
+                <img src="/images/github.webp">
+            </a>
+            <a href="https://twitter.com/asineth0">
+                <img src="/images/twitter.webp">
+            </a>
+            <a href="https://reddit.com/u/asineth_">
+                <img src="/images/reddit.webp">
+            </a>
+            <a href="https://discord.gg/vYwpNz">
+                <img src="/images/discord.webp">
+            </a>
+            <a href="https://t.me/asineth0">
+                <img src="/images/telegram.webp">
+            </a>
+            <a href="mailto:me@asineth.gq">
+                <img src="/images/email.webp">
+            </a>
+        </div>
         <p>me@asineth.gq - Asineth#2322</p>
     </div>
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
