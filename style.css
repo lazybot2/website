@@ -1,102 +1,97 @@
 body {
-    margin: 0
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  font-size: 100%;
 }
 
 canvas {
-    display: block;
+  display: block;
 }
 
 #particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #fefefe;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fefefe;
 }
 
 #main {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    padding: 48px;
-    opacity: 0;
-    animation-name: fadeInUp;
-    animation-duration: 0.5s;
-    animation-fill-mode: both;
-    text-shadow: 0px 0px 2px #ddaaff;
-    text-align: center;
-    font-family: 'Source Sans Pro', sans-serif;
-    color: #9988bb;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  animation-name: fadeInUp;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  /* text-shadow: 0px 0px 2px #ddaaff; */
+  text-align: center;
+  color: #222;
 }
 
-#title {
-    text-shadow: 0px 0px 8px #ddaaff;
-    font-family: 'Vibur', sans-serif;
-    font-size: 96px;
-    height: 30px;
-    color: #9988bb;
-    margin-top: 0px;
-    margin-bottom: 84px;
-}
-
-@keyframes fadeInUp {
-    from {
-        transform: translate(-50%, -50%) translate3d(0,40px,0)
-    }
-
-    to {
-        transform: translate(-50%, -50%) translate3d(0,0,0);
-        opacity: 1
-    }
-}
-
-.pfp {
-    width: 180px;
-    height: 180px;
-    border: 4px solid #eee;
-    border-radius: 180px;
-    box-shadow: 10px 10px 80px #555;
-}
-
-a {
-    font-size: 0px;
+#pfp {
+  box-shadow: 0px 0px 6em #666;
+  border: 0.25em solid #eee;
+  border-radius: 16em;
+  width: 12em;
+  height: 12em;
+  margin: 0.5em;
 }
 
 img {
-    margin-top: 18px;
-    margin-left: 8px;
-    margin-right: 8px;
-    height: 32px;
-    width: 32px;
+  margin: 1em;
+}
+
+h1 {
+  margin: 0;
+  font-family: Roboto Mono, sans-serif;
+  font-size: 4em;
+}
+
+h2 {
+  margin: 0;
+  text-shadow: 0px 0px 1em #eee;
+  font-size: 1.5em;
+  font-weight: normal;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateX(-50%) translateY(calc(-50% - 0.5px))
+      translate3d(0, 40px, 0);
+  }
+
+  to {
+    transform: translateX(-50%) translateY(calc(-50% - 0.5px))
+      translate3d(0, 0, 0);
+    opacity: 1;
+  }
 }
 
 a.button1 {
-    display: inline-block;
-    padding: 0.35em 1.2em;
-    border: 2px solid #9988bb;
-    margin: 0 0.3em 0.3em 0;
-    /* border-radius: 0.12em; */
-    border-radius: 4px;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    color: #9988bb;
-    text-align: center;
-    transition: all 0.2s;
-    margin-left: 8px;
-    margin-right: 8px;
-    font-weight: bold;
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 2px solid #9988bb;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #9988bb;
+  text-align: center;
+  transition: all 0.2s;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 a.button1:hover {
-    color: #ffffff;
-    background-color: #9988bb;
+  color: #ffffff;
+  background-color: #9988bb;
 }
 
-@media all and (max-width:30em) {
-    a.button1 {
-        display: block;
-        margin: 0.4em auto;
-    }
+@media all and (max-width: 30em) {
+  a.button1 {
+    display: block;
+    margin: 0.4em auto;
+  }
 }
