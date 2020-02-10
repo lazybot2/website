@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: Fira Code, monospace;
+    font-size: 100%;
+    letter-spacing: -0.1em;
+}
+
+canvas {
+    display: block;
+}
+
+a {
+    text-decoration: 0;
+    color: #a000e0;
+}
+
+body {
+    background: #181818;
+}
+
+#main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 4em;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #cccccc;
+}
+
+h3 {
+    font-size: 1.3em;
+    color: #cccccc;
+}
+
+p {
+    font-size: 1em;
+    color: #aaaaaa;
+}
+
+#logo {
+    margin-left: 20px;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateX(-50%) translateY(calc(-50% - 0.5px)) translate3d(0, 40px, 0);
+    }
+
+    to {
+        transform: translateX(-50%) translateY(calc(-50% - 0.5px)) translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
