@@ -8,7 +8,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #66ff88;
+    color: #aa33ff;
 }
 
 canvas {
@@ -56,7 +56,7 @@ h2 {
 
 h3 {
     font-size: 1.3em;
-    color: #202020;
+    color: #aa33ff;
 }
 
 @keyframes fadeInUp {
