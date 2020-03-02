@@ -1,66 +1,72 @@
 body {
-    margin: 0;
-    font-family: Fira Code, monospace;
-    font-size: 100%;
-    letter-spacing: -0.1em;
+	margin: 0;
+	font-family: Fira Code, monospace;
+	font-size: 32px;
+	letter-spacing: 0em;
 }
 
 canvas {
-    display: block;
+	display: block;
 }
 
 a {
-    text-decoration: 0;
-    color: #a000e0;
+	text-decoration: none;
+	color: #7878ff;
+	font-weight: normal;
 }
 
 body {
-    background: #181818;
+	overflow: hidden;
+	background: #181818;
 }
 
 #main {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    opacity: 0;
-    animation-name: fadeInUp;
-    animation-duration: 0.5s;
-    animation-fill-mode: both;
-    text-align: center;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	opacity: 0;
+	animation-name: fadeInUp;
+	animation-duration: 0.75s;
+	animation-fill-mode: both;
+	text-align: center;
 }
 
 h1 {
-    margin: 0;
-    font-size: 4em;
-    color: #ffffff;
+	font-size: 1em;
+	color: #ffffff;
 }
 
 h2 {
-    font-size: 1.5em;
-    color: #cccccc;
+	font-size: 0.7em;
+	color: #aaaaaa;
+	font-weight: normal;
 }
 
 h3 {
-    font-size: 1.3em;
-    color: #cccccc;
+	font-size: 0.6em;
+	color: #aaaaaa;
 }
 
 p {
-    font-size: 1em;
-    color: #aaaaaa;
+	font-size: 0.4em;
+	color: #aaaaaa;
 }
 
 #logo {
-    margin-left: 20px;
+	padding-top: 10px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	margin-left: 10px;    
+	margin-right: 10px;
 }
 
 @keyframes fadeInUp {
-    from {
-        transform: translateX(-50%) translateY(calc(-50% - 0.5px)) translate3d(0, 40px, 0);
+	from {
+		transform: translateX(-50%) translateY(calc(-50% - 0.5px)) translate3d(0, 40px, 0);
     }
 
-    to {
-        transform: translateX(-50%) translateY(calc(-50% - 0.5px)) translate3d(0, 0, 0);
-        opacity: 1;
+	to {
+		transform: translateX(-50%) translateY(calc(-50% - 0.5px)) translate3d(0, 0, 0);
+		opacity: 1;
     }
 }
